@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perfil - Monique</title>
+<link rel="icon" type="image/png" href="pictures/icon.webp">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="styles.css">
+<script src="script.js"></script>
+
+</head>
+
+<body>
+
+<header>
+    <h4>⚠ Conteúdo exclusivo para maiores de 18 anos!</h4>
+</header>
+
+<div id="alerta" class="alerta">
+    <span id="textoAlerta"></span>
+  </div>
+
+<div class="container">
+
+<div class="profile">
+<img class="avatar" src="pictures/1000146058.jpg">
+<div class="name">Monique <strong></strong></div>
+<div class="subtitle">Meu cantinho secreto e sem censura!</div>
+</div>
+
+<div class="bio">
+    Olá, sou a <strong>Monique</strong> (21). Acabei de ir morar sozinha e finalmente tenho liberdade para fazer o que eu sempre quis... Quer ver o que acontece quando a porta do meu quarto se fecha?
+</div>
+
+<div class="highlight">
+<img src="pictures/1000146061.jpg" onclick="abrirImagem(this)">
+<div id="modal" class="modal" onclick="fecharImagem()">
+    <span class="fechar">&times;</span>
+    <img class="modal-img" id="imgGrande">
+  </div>
+</div> 
+
+
+<div class="microcopy">
+    <p><i class="fa-solid fa-lock"></i> Pagamento 100% anônimo no PIX. O nome que aparece na fatura é discreto.</p>
+    <br>
+    <p><i class="fa-solid fa-bolt"></i> Receba o conteúdo automaticamente em 1 minuto, sem precisar conversar.</p>
+</div>
+
+<!--botao que ativa o popup do zap e telegram -->
+<div class="buttons">
+    
+    <button class="vip-btn" onclick="abrirPopup()">DESBLOQUEAR MEU CONTEÚDO VIP <i class="fa-solid fa-tag"></i></button>
+
+    <div class="popup-bg" id="popup">
+    <div class="popup">
+    
+    <span class="close" onclick="fecharPopup()">X</span>
+    
+    <h2>Onde você prefere receber seu acesso imediato?</h2>
+    
+    <button class="option-btn whatsapp" onclick="irWhatsapp()"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+    
+    <button class="option-btn telegram" onclick="irTelegram()"><i class="fa-brands fa-telegram"></i> Telegram</button>
+    
+  </div>
+ </div>
+</div>
+
+<div class="microcopy">
+    <p>Feedback de quem vê de pertinho!</p>
+    <br>
+</div>
+
+<!-- galeria dos prints -->
+
+<div class="gallery">
+    <img src="pictures/cliente1.jpg" class="foto" onclick="abrirImagem(this)">
+
+    <div id="modal" class="modal" onclick="fecharImagem()">
+      <span class="fechar">&times;</span>
+      <img class="modal-img" id="imgGrande">
+    </div>
+    
+    <img src="pictures/cliente2.jpg" class="foto" onclick="abrirImagem(this)">
+
+    <div id="modal" class="modal" onclick="fecharImagem()">
+      <span class="fechar">&times;</span>
+      <img class="modal-img" id="imgGrande">
+    </div>
+    
+    <img src="pictures/cliente3.jpg" class="foto" onclick="abrirImagem(this)">
+
+<div id="modal" class="modal" onclick="fecharImagem()">
+  <span class="fechar">&times;</span>
+  <img class="modal-img" id="imgGrande">
+ </div>
+</div>
+
+<div class="promo">
+    <i class="fa-solid fa-stopwatch"></i> Promoção por tempo limitado — aproveite agora!
+</div>
+
+<!-- galeria das 6 fotos no final -->
+
+<div class="gallery">
+    <img src="pictures/foto1.jpg" class="foto" onclick="abrirImagem(this)">
+
+    <div id="modal" class="modal" onclick="fecharImagem()">
+      <span class="fechar">&times;</span>
+      <img class="modal-img" id="imgGrande">
+    </div>
+    
+    <img src="pictures/foto5.jpg" class="foto" onclick="abrirImagem(this)">
+
+    <div id="modal" class="modal" onclick="fecharImagem()">
+      <span class="fechar">&times;</span>
+      <img class="modal-img" id="imgGrande">
+    </div>
+    
+    <img src="pictures/foto3.jpg" class="foto" onclick="abrirImagem(this)">
+
+<div id="modal" class="modal" onclick="fecharImagem()">
+  <span class="fechar">&times;</span>
+  <img class="modal-img" id="imgGrande">
+</div>
+
+<img src="pictures/foto4.jpg" class="foto">
+<img src="pictures/foto2.jpg" class="foto">
+<img src="pictures/foto6.jpg" class="foto">
+
+</div>
+
+<div class="support">
+    <a href="https://wa.me/558599540403?text=Oi%20Brenda,%20acabei%20de%20ver%20as%20prévias%20no%20site%20e%20fiquei%20louco%20para%20ver%20o%20resto%20de%20pertinho...%20Me%20passa%20os%20valores%20dos%20packs?"><i class="fa-solid fa-heart"></i> Quero apoiar a Monique
+    </a>
+</div>
+
+<div class="footer">
+Proibido para menores de 18 anos
+</div>
+
+</div>
+
+</body>
+</html>

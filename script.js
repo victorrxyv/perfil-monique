@@ -50,7 +50,7 @@ function abrirPopup(){
         let alerta = document.getElementById("alerta");
         let texto = document.getElementById("textoAlerta");
         
-        texto.innerHTML = '<i class="fa-solid fa-circle-user"></i> ' + nomeAleatorio + ' comprou o pacote ' + '<i class="fa-solid fa-gift"></i>';
+        texto.innerHTML = '<i class="fa-solid fa-circle-user"></i> ' + nomeAleatorio + ' liberou o acesso VIP! ' + '<i class="fa-solid fa-gift"></i>';
         
         alerta.style.display = "block";
         

@@ -251,8 +251,8 @@ img:hover{
 }
         
 .modal-img{
-    width:40%;
-    height:90%;
+    max-width:90%;
+    max-height:90%;
     border-radius:10px;
 }
         
@@ -294,3 +294,4 @@ img:hover{
     margin-top:30px;
 
 }
+

@@ -20,7 +20,7 @@ function abrirPopup(){
     }
         
     function irWhatsapp(){
-    window.location.href="https://wa.me/558599540403?text=Oi%20Brenda,%20acabei%20de%20ver%20as%20prévias%20no%20site%20e%20fiquei%20louco%20para%20ver%20o%20resto%20de%20pertinho...%20Me%20passa%20os%20valores%20dos%20packs?";
+    window.location.href="https://wa.me/558597540403?text=Oi%20Brenda,%20acabei%20de%20ver%20as%20prévias%20no%20site%20e%20fiquei%20louco%20para%20ver%20o%20resto%20de%20pertinho...%20Me%20passa%20os%20valores%20dos%20packs?";
     }
         
     function irTelegram(){
@@ -30,12 +30,12 @@ function abrirPopup(){
 
     const nomes = [
         "Lucas",
-        "Gabriel Fernandes",
-        "Matheus Brito",
+        "Gabriel F",
+        "Matheus B",
         "Rafael",
-        "João Viturino",
-        "Pedro Henrique",
-        "Felipe dos Santos",
+        "João V",
+        "Pedro H",
+        "Felipe",
         "Bruno",
         "Thiago",
         "Ísaias",
@@ -61,4 +61,5 @@ function abrirPopup(){
         }
         
         setInterval(mostrarCompra,30000);
+
         

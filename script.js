@@ -60,7 +60,7 @@ function abrirPopup(){
         
         }
         
-        setInterval(mostrarCompra,30000);
+        setInterval(mostrarCompra,60000);
 
         
 

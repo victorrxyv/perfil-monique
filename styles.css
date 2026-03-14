@@ -8,6 +8,11 @@
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
+:root {
+    --cor01: #ba0000;
+    --cor02: #722F37;
+}
+
 body{
     font-family:Arial, Helvetica, sans-serif;
     background:#0f0f10;
@@ -70,10 +75,23 @@ header{
     gap: 5px;
 }
 
-.headline strong {
-    color: #00ff4c;
-    font-size: xx-small;
+.headline strong{
+    color: #00ff3c;
+    animation: piscar 3s infinite;
 }
+
+@keyframes piscar{
+    0%{
+        color:#00ff3c;
+    }
+    50%{
+        color:#76a581;
+    }
+    100%{
+        color:#00ff3c;
+    }
+}
+
 
 .headline p {
     font-size: 15px;
@@ -84,9 +102,9 @@ header{
     width:140px;
     height:140px;
     border-radius:50%;
-    box-shadow: 0 0 10px #ff2f7a,
-            0 0 20px #ff2f7a,
-            0 0 30px #ff2f7a;
+    box-shadow: 0 0 10px var(--cor01),
+            0 0 20px var(--cor01),
+            0 0 30px var(--cor01);
     object-fit:cover;
     }
     
@@ -97,7 +115,7 @@ header{
     }
     
 .subtitle{
-    color:#ff2f7a;
+    color: var(--cor01);
     margin-top:5px;
     }
     
@@ -113,7 +131,7 @@ header{
 }
 
 .bio strong {
-    color:#ff2f7a;
+    color: var(--cor01);
     }
     
 .highlight{
@@ -130,7 +148,7 @@ header{
     }   
 
 .microcopy {
-    text-align: center;
+    text-align: justify;
     font-size: small;
     color: #b9b9b9;
     margin-top: 10px;
@@ -143,7 +161,7 @@ header{
 /* Botão principal */
 
 .vip-btn{
-    background: linear-gradient(45deg,#ff0066,#ff3399);
+    background: linear-gradient(45deg,var(--cor02),var(--cor01));
     color:white;
     width: 100%;
     padding: 19px;
@@ -159,6 +177,12 @@ header{
 .vip-btn:hover{
     transform:scale(1.05);
     }
+
+.description {
+    text-align: justify;
+    font-size: x-small;
+    color: #b9b9b9;
+}    
     
 /* fundo do popup */
 
@@ -182,7 +206,7 @@ header{
     padding:25px;
     border-radius:12px;
     text-align:center;
-    max-width:320px;
+    max-width:350px;
     position:relative;
 }
     
@@ -217,23 +241,25 @@ header{
 .whatsapp{
     background:#25D366;
     color:white;
-    font-weight: 700;
+    font-weight: 800;
     transition:0.3s;
 }
 
 .whatsapp:hover {
     transform:scale(1.05);
+    box-shadow:0 0 10px #25D366, 0 0 20px #25D366;
 }
     
 .telegram{
     background:#0088cc;
     color:white;
-    font-weight: 700;
+    font-weight: 800;
     transition:0.3s;
 }
 
 .telegram:hover {
     transform:scale(1.05);
+    box-shadow:0 0 10px #0088cc, 0 0 20px #0088cc;
 }
 
 .promo{
@@ -310,9 +336,11 @@ header{
 }
     
 footer{
+    width: 100%;
+    background-color: #444444;
     margin-top: 10px; 
     text-align: center;
-    font-size: 16px;
+    font-size: 13px;
     color:rgb(196, 196, 196);
 }
 
